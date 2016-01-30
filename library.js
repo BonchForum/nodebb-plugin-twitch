@@ -11,10 +11,7 @@
 		}
 
 		if (data.postData.content.match(regularUrl)) {
-      /*var twitchUrls = data.postData.content.match(regularUrl);
-      var twitchChanels = twitchUrls.forEach(function(url) {
-        return url.substr('https://www.twitch.tv/'.length);
-      });*/
+      console.log('HHEWSASSS');
 			
       data.postData.content = data.postData.content.replace(regularUrl, embed));
 		}		
