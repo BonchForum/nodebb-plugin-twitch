@@ -3,7 +3,7 @@
 		var Twitch = {},
 			embed = '<iframe src="http://player.twitch.tv/?channel=$1" frameborder="0" scrolling="no" height="378" width="620"></iframe>';
 
-		var regularUrl = /<a href="https:\/\/www\.twitch\.tv\/(\w+)"<\/a>/g;
+		var regularUrl = /<a href="https:\/\/www\.twitch\.tv\/(\w*)(.*)<\/a>/g;
 
 		Twitch.parse = function(data, callback) {
 			if (!data || !data.postData || !data.postData.content) {
