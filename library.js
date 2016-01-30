@@ -1,7 +1,7 @@
 (function(module) {
 		"use strict";
 		var Twitch = {},
-			embed = '<iframe src="http://player.twitch.tv/?channel=$1" frameborder="0" scrolling="no" height="378" width="620"></iframe>';
+			embed = '<iframe src="https://player.twitch.tv/?channel=$1" frameborder="0" scrolling="no" height="378" width="620"></iframe>';
 
 		var regularUrl = /<a href="https:\/\/www\.twitch\.tv\/(\w*)(.*)<\/a>/g;
 
