@@ -10,8 +10,6 @@
 				return callback(null, data);
 			}
 
-			console.log(data.postData.content);
-
 			if (data.postData.content.match(regularUrl)) {
 				data.postData.content = data.postData.content.replace(regularUrl, embed);
 		}
